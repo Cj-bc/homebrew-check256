@@ -5,6 +5,9 @@ class Check256 < Formula
   url "https://github.com/Cj-bc/check256/archive/v0.1.1.tar.gz"
   sha256 "b0bc196dd0975b62745ab4e5778e93b426cdb548de6a8484bea100b2323bd910"
 
+  depends_on "openssl"
+  depends_on "wget"
+
   def install
     system "mv", "check256.sh", "check256"
     bin.install "check256"
